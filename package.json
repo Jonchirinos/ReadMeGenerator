@@ -1,5 +1,5 @@
 {
-    "name": "README-generator",
+    "name": "hw9",
     "version": "1.0.0",
     "description": "Allows user to generate readme by inputting and selecting different values",
     "main": "index.js",

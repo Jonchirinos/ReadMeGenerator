@@ -12,81 +12,77 @@ const questions = [
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
     {
         name: "title",
         type: "input",
         message: "Project Title?",
     },
     {
-        name:"Project Description",
-        type:"input",
+        name: "Project Description",
+        type: "input",
         message: "Insert description of the project you have developed",
-    }
+    },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    
-}
+function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {
-
-}
+function init() {}
 
 // Function call to initialize app
 init();
