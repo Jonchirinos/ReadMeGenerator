@@ -4,9 +4,10 @@ const inquirer = require("inquirer");
 const jest = require("jest");
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
+// const { file } = require("babel-types");
 
 // TODO: Create an array of questions for user input
-const questions = [
+inquirer.prompt([
     {
         name: "title",
         type: "input",
@@ -73,13 +74,16 @@ const questions = [
         type: "list",
         message: "Which license was used for the application?",
     },
-];
+]).then((answers) => {
+   const readMe = writeToFile("README.md", generateMarkdown(answers));
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log("Finished")));
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+// function init() {}
 
 // Function call to initialize app
-init();
