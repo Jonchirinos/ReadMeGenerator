@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 // node modules
 const inquirer = require("inquirer");
+const jest = require("jest");
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
 
