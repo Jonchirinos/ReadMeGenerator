@@ -70,11 +70,15 @@ inquirer.prompt([
     },
 
     {
-        name: "license",
+        name: "licenseType",
         type: "list",
         message: "Which license was used for the application?",
+        choices: ["MIT", "GPL3.0", "None"]
     },
 ]).then((answers) => {
+
+generateMarkdown();
+
    const readMe = writeToFile("README.md", generateMarkdown(answers));
 
 
