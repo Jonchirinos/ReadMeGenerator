@@ -43,11 +43,13 @@ inquirer
             name: "languages/technologies",
             type: "checkbox",
             message: "Which Languages/Technologies were used?",
+            choices: ["MIT", "GPL3.0", "None"],
         },
         {
             name: "screenshot",
             type: "list",
             message: "Link to image of completed app?",
+            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
         },
         {
             name: "questions",
@@ -74,17 +76,18 @@ inquirer
             name: "licenseType",
             type: "list",
             message: "Which license was used for the application?",
-            choices: ["MIT", "GPL3.0", "None"],
+            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
         },
     ])
     .then((answers) => {
-        generateMarkdown();
+        console.log(answers);
+        // generateMarkdown();
 
-        const readMe = writeToFile("README.md", generateMarkdown(answers));
+        writeToFile("README.md", generateMarkdown(answers));
 
         // TODO: Create a function to write README file
         // function writeToFile(fileName, data) {
-        fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log("Finished")));
+        // fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log("Finished")));
     });
 // TODO: Create a function to initialize app
 // function init() {}
