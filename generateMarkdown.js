@@ -16,49 +16,50 @@ function renderLicenseSection(type) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-return;
-`# **${answers.title}${renderLicense(answers.licenseType)}**
+    return;
+    `# **${answers.title}${renderLicense(answers.licenseType)}**
 
 =
 
 ## Table of Contents
--[Description]${answers.}
--[Screenshot]${answers.}
--[Installation]${answers.}
--[Usage]${answers.}
--[Contribution]${answers.}
--[Tests]${answers.}
--[Questions]${answers.}
--[GitHub Links]${answers.}
--[Contact Me]${answers.}
+-[Description]${answers.description}
+-[Screenshot]${answers.screenshot}
+-[Installation]${answers.installation}
+-[Usage]${answers.usage}
+-[Contribution]${answers.contribution}
+-[Tests]${answers.tests}
+-[Questions]${answers.questions}
+-[Links]${answers.repo}
+-[Contact Me]${answer.contact}
 
 ## Description
 ${answers.description}
 
 ## Screenshot
-${answers.description}
+${answers.screenshot}
 
 ## Installation
-${answers.description}
+${answers.installation}
 
 ## Usage
-${answers.description}
+${answers.usage}
 
 ## Contribution
-${answers.description}
+${answers.contribution}
 
 ## Tests
-${answers.description}
+${answers.tests}
 
 ## Questions
-${answers.description}
+${answers.questions}
 
 ## GitHub Links
-${answers.description}
+-${answers.repo}
+-${answers.github}
 
 ## Contact Me
-${answers.description}
+${answers.contact}
 `;
-};
+}
 
 module.exports = generateMarkdown;

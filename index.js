@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 // node modules
 const inquirer = require("inquirer");
-const jest = require("jest");
+// const jest = require("jest");
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
 // const { file } = require("babel-types");
@@ -40,16 +40,15 @@ inquirer
             message: "What should the user do?",
         },
         {
-            name: "languages/technologies",
-            type: "checkbox",
-            message: "Which Languages/Technologies were used?",
-            choices: ["MIT", "GPL3.0", "None"],
-        },
+        //     name: "languages/technologies",
+        //     type: "checkbox",
+        //     message: "Which Languages/Technologies were used?",
+        //     choices: ["MIT", "GPL3.0", "None"],
+        // },
         {
             name: "screenshot",
-            type: "list",
+            type: "input",
             message: "Link to image of completed app?",
-            choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
         },
         {
             name: "questions",
@@ -71,7 +70,11 @@ inquirer
             type: "input",
             message: "Enter your GitHub Username",
         },
-
+        {
+            name: "contact",
+            type: "input",
+            message: "Enter preferred contact email",
+        },
         {
             name: "licenseType",
             type: "list",
