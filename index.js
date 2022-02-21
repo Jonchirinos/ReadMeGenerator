@@ -30,7 +30,7 @@ inquirer
             message: "What were your contributions to the development of this app?",
         },
         {
-            name: "instillation",
+            name: "installation",
             type: "input",
             message: "How do you install the app?",
         },
