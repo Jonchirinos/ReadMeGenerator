@@ -39,7 +39,7 @@ inquirer
             type: "input",
             message: "What should the user do?",
         },
-        {
+        // {
         //     name: "languages/technologies",
         //     type: "checkbox",
         //     message: "Which Languages/Technologies were used?",
@@ -83,14 +83,18 @@ inquirer
         },
     ])
     .then((answers) => {
-        console.log(answers);
+        // console.log(answers);
+
+        const data = generateMarkdown(answers);
+        console.log("data", data);
         // generateMarkdown();
+        function writeToFile(fileName, data) {
+            fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log("Finished")));
+            // fs.writeFile( file, data, options, callback )
 
-        writeToFile("README.md", generateMarkdown(answers));
-
-        // TODO: Create a function to write README file
-        // function writeToFile(fileName, data) {
-        // fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log("Finished")));
+            // TODO: Create a function to write README file
+        }
+        writeToFile("README.md", data);
     });
 // TODO: Create a function to initialize app
 // function init() {}
