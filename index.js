@@ -39,12 +39,6 @@ inquirer
             type: "input",
             message: "What should the user do?",
         },
-        // {
-        //     name: "languages/technologies",
-        //     type: "checkbox",
-        //     message: "Which Languages/Technologies were used?",
-        //     choices: ["MIT", "GPL3.0", "None"],
-        // },
         {
             name: "screenshot",
             type: "input",
@@ -83,8 +77,6 @@ inquirer
         },
     ])
     .then((answers) => {
-        // console.log(answers);
-
         const data = generateMarkdown(answers);
         console.log("data", data);
         // generateMarkdown();
@@ -96,7 +88,3 @@ inquirer
         }
         writeToFile("README.md", data);
     });
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
