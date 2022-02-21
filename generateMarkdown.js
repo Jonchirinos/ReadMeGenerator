@@ -4,11 +4,11 @@ function renderLicenseBadge(license) {
     if ((license = "MIT")) {
         return `![MIT](https://img.shields.io/badge/MIT-MIT-red)`;
     } else if ((license = "APACHE 2.0")) {
-        return `![APACHE](https://img.shields.io/badge/APACHE-APACHE-red)`;
+        return `![APACHE](https://img.shields.io/badge/APACHE-APACHE-green)`;
     } else if ((license = "GPL 3.0")) {
-        return `![GPL](https://img.shields.io/badge/GPL-GPL-red)`;
+        return `![GPL](https://img.shields.io/badge/GPL-GPL-blue)`;
     } else if ((license = "BSD 3")) {
-        return `![BSD](https://img.shields.io/badge/BSD-BSD-red)`;
+        return `![BSD](https://img.shields.io/badge/BSD-BSD-lightgrey)`;
     } else {
         return " ";
     }
@@ -19,7 +19,7 @@ function generateMarkdown(answers) {
     return `# **${answers.title}**
     
 ## Badge
-${renderLicenseBadge("MIT")}
+${renderLicenseBadge("")}
 
 ## Table of Contents
 - [Description] ${answers.description}
@@ -36,7 +36,7 @@ ${renderLicenseBadge("MIT")}
 ${answers.description}
 
 ## Screenshot
-${answers.screenshot}
+![](${answers.screenshot})
 
 ## Installation
 ${answers.installation}
@@ -54,8 +54,8 @@ ${answers.tests}
 ${answers.questions}
 
 ## GitHub Links
-- ${answers.repo}
-- ${answers.github}
+- Link to my GitHub Repo${answers.repo}
+- Link to my GitHub Page${answers.github}
 
 ## Contact Me
 ${answers.contact}
