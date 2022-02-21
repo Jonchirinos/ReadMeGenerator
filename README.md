@@ -1,7 +1,7 @@
 # **j**
     
 ## Badge
-![MIT](https://img.shields.io/badge/MIT-MIT-red)
+![BSD](https://img.shields.io/badge/BSD-BSD-lightgrey)
 
 ## Table of Contents
 - [Description] j

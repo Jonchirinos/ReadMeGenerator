@@ -76,7 +76,7 @@ inquirer
             message: "Enter preferred contact email",
         },
         {
-            name: "licenseType",
+            name: "license",
             type: "list",
             message: "Which license was used for the application?",
             choices: ["MIT", "APACHE 2.0", "GPL 3.0", "BSD 3", "None"],
