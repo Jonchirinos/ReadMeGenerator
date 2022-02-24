@@ -23,15 +23,15 @@ function generateMarkdown(answers) {
 ${renderLicenseBadge(answers.license)}
 
 ## Table of Contents
-- [Description] ${answers.description}
-- [Screenshot] ${answers.screenshot}
-- [Installation]${answers.installation}
-- [Usage] ${answers.usage}
-- [Contribution] ${answers.contribution}
-- [Tests] ${answers.tests}
-- [Questions] ${answers.questions}
-- [Links] ${answers.repo}
-- [Contact Me] ${answers.contact}
+- [Description](#Description)
+- [Screenshot](#Screenshot)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contribution](#Contribution)
+- [Tests](#Tests)
+- [Questions](#Questions)
+- [Links](#Links)
+- [Contact Me](#Contact)
 
 ## Description
 ${answers.description}
@@ -58,7 +58,7 @@ ${answers.questions}
 - Link to my GitHub Repo${answers.repo}
 - Link to my GitHub Page${answers.github}
 
-## Contact Me
+## Contact
 ${answers.contact}
     `;
 }
