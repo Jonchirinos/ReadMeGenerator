@@ -3,7 +3,7 @@
 const inquirer = require("inquirer");
 // const jest = require("jest");
 const fs = require("fs");
-const generateMarkdown = require("./generateMarkdown");
+const generateMarkdown = require("./assets/generateMarkdown");
 // const { file } = require("babel-types");
 
 // TODO: Create an array of questions for user input
